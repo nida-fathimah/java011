@@ -1,0 +1,38 @@
+import java.util.Scanner;
+ class Volume
+{	
+ double vol,a,b,c;
+void findVolume(double a)
+{
+System.out.println("volume of cube="+(a*a*a));
+}
+void findVolume(double a,doubleb,double c)
+{
+System.out.println("volume of rectangular box= "+(a*b*c));
+}
+void findVolume(double a,double b)
+{
+System.out.println("volume of cylinder= "+(3.14*a*a*b));
+}
+}
+ class Volume2
+{
+ public static void main(String args[])
+{
+ double a,b,c;
+Scanner sc=new Scanner(System.in);
+Volume vol=new Volume();
+System.out.println("Enter the side of cube");
+a=sc.nextDouble();
+vol.findVolume(a);
+System.out.println("Enter the length,width and height of the Rectangular ");
+ a=sc.nextDouble();
+b=sc.nextDouble();
+c=sc.nextDouble();
+vol.findVolume(a,b,c);
+System.out.println("Enter the radius and height of the Cylinder: ");
+a=sc.nextDouble();
+b=sc.nextDouble();
+vol.findVolume(a,b);
+}
+}
